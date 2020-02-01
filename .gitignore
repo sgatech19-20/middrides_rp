@@ -1,1 +1,16 @@
+# Project files
 
+# Secrets
+Privacy.swift
+
+## Build generated
+build/
+DerivedData/
+
+##Other
+xcuserdata/
+*.xcuserstate
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
