@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5308565823E5FF4C008A22A0 /* MiddRidesTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 538473B123E14BCE006D1AC2 /* MiddRidesTests.xctest */; };
+		5308565923E5FF4F008A22A0 /* MiddRidesUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 538473BC23E14BCE006D1AC2 /* MiddRidesUITests.xctest */; };
+		5308565A23E5FF53008A22A0 /* MiddRides.app in Resources */ = {isa = PBXBuildFile; fileRef = 5384739B23E14BCA006D1AC2 /* MiddRides.app */; };
 		5384739F23E14BCA006D1AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384739E23E14BCA006D1AC2 /* AppDelegate.swift */; };
 		538473A123E14BCA006D1AC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538473A023E14BCA006D1AC2 /* SceneDelegate.swift */; };
 		538473A323E14BCA006D1AC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538473A223E14BCA006D1AC2 /* ContentView.swift */; };
@@ -242,6 +245,9 @@
 			files = (
 				538473AB23E14BCE006D1AC2 /* LaunchScreen.storyboard in Resources */,
 				538473A823E14BCE006D1AC2 /* Preview Assets.xcassets in Resources */,
+				5308565923E5FF4F008A22A0 /* MiddRidesUITests.xctest in Resources */,
+				5308565A23E5FF53008A22A0 /* MiddRides.app in Resources */,
+				5308565823E5FF4C008A22A0 /* MiddRidesTests.xctest in Resources */,
 				538473A523E14BCE006D1AC2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
