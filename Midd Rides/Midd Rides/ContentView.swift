@@ -7,44 +7,51 @@
 //
 
 import SwiftUI
+
 struct ContentView: View {
-    var body: some View{
+    @State var currentTab=0
+    var body: some View {
         ZStack{
-            Color.init(red:0.09, green:0.11, blue:0.25).edgesIgnoringSafeArea(.all)
             FrontView()
         }
     }
 }
 
-struct FrontView: View {
-    var body: some View {
-        VStack{
-            Image("Van Logo White")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 300)
-            Button("STUDENT"){
-                //Button Actions
+struct  FrontView: View{
+    var body: some View{
+            NavigationView{
+                 ZStack{
+                    Color.init(red:0.09, green:0.11, blue:0.25).edgesIgnoringSafeArea(.all)
+                    
+                    VStack(alignment: .center){
+                        Image("Van Logo White")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                            .padding(.top, -150)
+                            .frame(width: 300)
+                        //this students button goes to request view
+                        NavigationLink(destination: RequestView()){
+                          Text("Student")
+                            .foregroundColor(.white)
+                            .padding()
+                          .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 2))
+                        }.padding(.top, -30.0)
+                        //this admin button goes to admin view
+                          NavigationLink(destination: AdminView() ){
+                            Text("Midd Rides Adminstrator")
+                            .foregroundColor(.white)
+                            .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 2))
+                          }.padding(.top, 20)
+                    }
+                }
             }
-            .accentColor(.white)
-            .padding(20)
-            .border(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/, width: 2)
-            .cornerRadius(20)
-            .padding(20)
-            Button("MIDDRIDES ADMINISTRATOR"){
-                //Button actions
-            }
-            .accentColor(.white)
-            .padding(20)
-            .border(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-            .cornerRadius(20)
-        }
+    
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        
         ContentView()
     }
 }
+
